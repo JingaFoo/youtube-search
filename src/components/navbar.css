@@ -3,6 +3,22 @@
   box-shadow: 0 4px 2px -2px #ccc;
 }
 
+.navbar-brand {
+  color: inherit;
+}
+
+.navbar-brand:hover {
+  color: #700;
+}
+
+.menu-icon {
+  font-size: 150%;
+}
+
+button:focus {
+  outline: none;
+}
+
 .nav-link {
   padding: 1rem;
   color: #555;
@@ -13,4 +29,16 @@
 .nav-link:hover {
   background: #fff;
   color: #700;
+}
+
+/* ------------- MEDIA QUERIES -------------*/
+
+@media only screen and (max-width: 576px) {
+  .nav-link {
+    font-size: 150%;
+  }
+  
+  .navbar-nav {
+    padding: 20px 0;
+  }
 }
