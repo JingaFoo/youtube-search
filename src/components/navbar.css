@@ -1,0 +1,16 @@
+.navbar {
+  background-color: #fff;
+  box-shadow: 0 4px 2px -2px #ccc;
+}
+
+.nav-link {
+  padding: 1rem;
+  color: #555;
+  transition: color 0.5s, box-shadow 0.5s ease;
+  -webkit-transition: color 0.3s, box-shadow 0.3s ease;
+}
+
+.nav-link:hover {
+  background: #fff;
+  color: #700;
+}
