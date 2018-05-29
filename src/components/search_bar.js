@@ -8,7 +8,7 @@ class SearchBar extends Component {
       <div className="input-group">
         <input className="search-input form-control" />
         <div className="input-group-append">
-          <button className="btn btn-outline-secondary" type="button">
+          <button className="btn btn-outline-primary" type="button">
           <i className="icon ion-md-search"></i>
           </button>
         </div>
