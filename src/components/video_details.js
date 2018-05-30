@@ -3,7 +3,11 @@ import './video_details.css';
 
 const VideoDetail = ({video}) => {
   if(!video) {
-    return <div>Loading...</div>;
+    return (
+      <div className="container d-flex align-items-center justify-content-center spinner">
+        <div className="loader"></div>
+      </div>
+    );
   }
   const videoId = video.id.videoId;
   const url = `https://www.youtube.com/embed/${videoId}`;

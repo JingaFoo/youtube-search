@@ -12,7 +12,10 @@ class App extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { videos: [] }
+    this.state = {
+      videos: [],
+      selectedVideo: null
+    };
 
     //Fetch initial videos from YouTube API with the search term
     YTSearch({ key: API_KEY, term: 'league of legends' }, (videos) => {
