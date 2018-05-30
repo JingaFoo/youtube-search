@@ -4,7 +4,7 @@ import YTSearch from 'youtube-api-search';
 import Navbar from './components/navbar';
 import VideoList from './components/video_list';
 import VideoDetails from './components/video_details';
-import { API_KEY } from './config/keys';
+// import { API_KEY } from './config/keys';
 
 import './index.css';
 
