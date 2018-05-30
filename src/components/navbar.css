@@ -1,10 +1,12 @@
 .navbar {
   background-color: #fff;
-  box-shadow: 0 4px 2px -2px #ccc;
+  box-shadow: 0 3px 2px -2px #ccc;
 }
 
 .navbar-brand {
   color: inherit;
+  font-size: 110%;
+  font-weight: 500;
 }
 
 .navbar-brand:hover {
@@ -20,7 +22,7 @@ button:focus {
 }
 
 .nav-link {
-  padding: 1rem;
+  font-size: 130%;
   color: #555;
   transition: color 0.5s, box-shadow 0.5s ease;
   -webkit-transition: color 0.3s, box-shadow 0.3s ease;
@@ -37,7 +39,7 @@ button:focus {
   .nav-link {
     font-size: 150%;
   }
-  
+
   .navbar-nav {
     padding: 20px 0;
   }

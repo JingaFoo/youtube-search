@@ -1,4 +1,5 @@
 import React from 'react';
+import './video_details.css';
 
 const VideoDetail = ({video}) => {
   if(!video) {
@@ -17,7 +18,7 @@ const VideoDetail = ({video}) => {
           <div>
             <h4>{video.snippet.title}</h4>
           </div>
-          <button className="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          <button className="description-expand" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
             Description  <i className="icon ion-md-arrow-dropdown"></i>
           </button>
           <div className="collapse" id="collapseExample">

@@ -23,7 +23,7 @@ class App extends Component {
     return (
       <div>
         <Navbar />
-        <div className="container">
+        <div className="container main-body">
           <div className="row no-gutters">
             <div className="col-8">
               <VideoDetail video={this.state.videos[1]} />

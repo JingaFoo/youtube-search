@@ -8,7 +8,7 @@ class Navbar extends Component {
     return (
       <nav className="navbar navbar-expand-sm">
         <div className="container">
-          <a className="navbar-brand" href="/">YouTube</a>
+          <a className="navbar-brand" href="/"><i className="icon ion-logo-youtube">MyTube</i></a>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <i className="icon ion-md-menu menu-icon"></i>
           </button>
@@ -16,7 +16,7 @@ class Navbar extends Component {
             <div className="nav-left col-2 d-none d-sm-block">
               <ul className="navbar-nav">
                 <li className="nav-item">
-                  <a className="nav-link" href="/">Home</a>
+                  <a className="nav-link" href="/"><i className="icon ion-md-home"></i></a>
                 </li>
               </ul>
             </div>
