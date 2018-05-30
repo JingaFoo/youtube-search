@@ -5,7 +5,15 @@ a:link {
 
 
 .video-item {
-  padding-bottom: 20px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  box-shadow: 0 2px 2px #e3e3e3;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.video-item:hover {
+  box-shadow: 0 4px 5px 4px #e3e3e3;
 }
 
 .video-title {
@@ -13,9 +21,14 @@ a:link {
   font-weight: 500;
 }
 
+.channel-details {
+  text-align: center;
+}
+
 .channel-details span {
-  font-size: 100%;
+  font-size: 80%;
   color: inherit;
+  font-weight: 400;
 }
 
 .video-thumbnail img {

@@ -12,7 +12,7 @@ class App extends Component {
     this.state = { videos: [] }
 
     //Fetch initial videos from YouTube API with the search term
-    YTSearch({ key: API_KEY, term: 'tesla' }, (videos) => {
+    YTSearch({ key: API_KEY, term: 'lamborghini' }, (videos) => {
       this.setState({ videos });
     });
   }

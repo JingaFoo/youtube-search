@@ -13,7 +13,7 @@ class Navbar extends Component {
             <i className="icon ion-md-menu menu-icon"></i>
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
-            <div className="nav-left col-3 d-none d-sm-block">
+            <div className="nav-left col-2 d-none d-sm-block">
               <ul className="navbar-nav">
                 <li className="nav-item">
                   <a className="nav-link" href="/">Home</a>
