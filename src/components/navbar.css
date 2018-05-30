@@ -17,10 +17,6 @@
   font-size: 150%;
 }
 
-button:focus {
-  outline: none;
-}
-
 .nav-link {
   font-size: 120%;
   color: #555;
@@ -37,10 +33,14 @@ button:focus {
 
 @media only screen and (max-width: 576px) {
   .nav-link {
-    font-size: 150%;
+    font-size: 130%;
   }
 
   .navbar-nav {
     padding: 20px 0;
+  }
+
+  .input-group {
+    margin-bottom: 20px;
   }
 }

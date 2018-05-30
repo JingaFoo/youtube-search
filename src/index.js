@@ -15,7 +15,7 @@ class App extends Component {
     this.state = { videos: [] }
 
     //Fetch initial videos from YouTube API with the search term
-    YTSearch({ key: API_KEY, term: 'fortnite' }, (videos) => {
+    YTSearch({ key: process.env.API_KEY, term: 'league of legends' }, (videos) => {
       this.setState({ videos });
     });
   }
@@ -24,11 +24,21 @@ class App extends Component {
       <div>
         <Navbar />
         <div className="container main-body">
-          <div className="row no-gutters">
-            <div className="col-8">
+          <div className="d-none d-sm-block">
+            <div className="row no-gutters">
+              <div className="col-8">
+                <VideoDetails video={this.state.videos[0]} />
+              </div>
+              <div className="col-4">
+                <VideoList videos={this.state.videos} />
+              </div>
+            </div>
+          </div>
+          <div className="d-block d-sm-none">
+            <div className="">
               <VideoDetails video={this.state.videos[0]} />
             </div>
-            <div className="col-4">
+            <div className="">
               <VideoList videos={this.state.videos} />
             </div>
           </div>

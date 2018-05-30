@@ -8,7 +8,7 @@ class Navbar extends Component {
     return (
       <nav className="navbar navbar-expand-sm">
         <div className="container">
-          <a className="navbar-brand" href="/"><i className="icon ion-logo-youtube">MyTube</i></a>
+          <a className="navbar-brand" href="/"><i className="icon ion-logo-youtube">MyTube :)</i></a>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <i className="icon ion-md-menu menu-icon"></i>
           </button>
