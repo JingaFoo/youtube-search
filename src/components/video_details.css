@@ -1,3 +1,16 @@
+.video-detail-box {
+  box-shadow: 0 2px 10px 2px #e3e3e3;
+}
+
 .description-expand {
-  
+  color: inherit;
+  background-color: inherit;
+  border: 0;
+  cursor: pointer;
+  font-size: 80%;
+  margin-bottom: 10px;
+}
+
+.video-description {
+
 }

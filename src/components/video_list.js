@@ -10,9 +10,9 @@ const VideoList = (props) => {
   return (
     <div className="container">
       <div className="video-results">
-        <span>5 videos</span>
+        <span>5 results</span>
+        <hr className="mx-4" /> 
       </div>
-      <hr />
       <div className="video-list">
         <div className="row no-gutters video-list-content">
           {videoItems}

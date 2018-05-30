@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import YTSearch from 'youtube-api-search';
 import Navbar from './components/navbar';
 import VideoList from './components/video_list';
-import VideoDetail from './components/video_detail';
+import VideoDetails from './components/video_details';
 import { API_KEY } from './config/keys';
 
 import './index.css';
@@ -15,7 +15,7 @@ class App extends Component {
     this.state = { videos: [] }
 
     //Fetch initial videos from YouTube API with the search term
-    YTSearch({ key: API_KEY, term: 'lamborghini' }, (videos) => {
+    YTSearch({ key: API_KEY, term: 'fortnite' }, (videos) => {
       this.setState({ videos });
     });
   }
@@ -26,7 +26,7 @@ class App extends Component {
         <div className="container main-body">
           <div className="row no-gutters">
             <div className="col-8">
-              <VideoDetail video={this.state.videos[1]} />
+              <VideoDetails video={this.state.videos[0]} />
             </div>
             <div className="col-4">
               <VideoList videos={this.state.videos} />
