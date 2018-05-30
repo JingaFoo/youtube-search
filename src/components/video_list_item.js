@@ -2,11 +2,10 @@ import React from 'react';
 import './video_list_item.css';
 
 const VideoListItem = ({video}) => {
-  console.log(video.snippet)
   return (
-    <div className="col-md-2 video-item">
+    <div className="col-md-12 video-item">
       <a className="video-content" href="/">
-      <div className="channel-details p-1">
+      <div className="channel-details p-2">
         <span>{video.snippet.channelTitle}</span>
       </div>
         <div className="video-thumbnail">

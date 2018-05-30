@@ -8,9 +8,15 @@ const VideoList = (props) => {
     return <VideoListItem key={video.etag} video={video} />
   });
   return (
-    <div className="container video-list">
-      <div className="row no-gutters justify-content-center">
-        {videoItems}
+    <div className="container">
+      <div className="video-results">
+        <span>5 videos</span>
+      </div>
+      <hr />
+      <div className="video-list">
+        <div className="row no-gutters video-list-content">
+          {videoItems}
+        </div>
       </div>
     </div>
   );
