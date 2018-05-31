@@ -17,11 +17,18 @@ class App extends Component {
       selectedVideo: null
     };
 
-    //Fetch initial videos from YouTube API with the search term
+    // Fetch initial videos from YouTube API with the search term and set the application state
     YTSearch({ key: API_KEY, term: 'league of legends' }, (videos) => {
-      this.setState({ videos });
+      this.setState({
+        videos: videos,
+        selectedVideo: videos[0]
+       });
     });
   }
+  /*
+    Pass a prop video with an initial selectedVideo to VideoDetails to render an initial video.
+    Pass a functional prop onVideoSelect to VideoList that updates the selectedVideo state
+  */
   render() {
     return (
       <div>
@@ -30,10 +37,12 @@ class App extends Component {
           <div className="d-none d-sm-block">
             <div className="row no-gutters">
               <div className="col-8">
-                <VideoDetails video={this.state.videos[0]} />
+                <VideoDetails video={this.state.selectedVideo} />
               </div>
               <div className="col-4">
-                <VideoList videos={this.state.videos} />
+                <VideoList
+                  onVideoSelect={selectedVideo => this.setState({selectedVideo})}
+                  videos={this.state.videos} />
               </div>
             </div>
           </div>
@@ -42,7 +51,9 @@ class App extends Component {
               <VideoDetails video={this.state.videos[0]} />
             </div>
             <div className="">
-              <VideoList videos={this.state.videos} />
+              <VideoList
+                onVideoSelect={selectedVideo => this.setState({selectedVideo})}
+                videos={this.state.videos} />
             </div>
           </div>
         </div>
