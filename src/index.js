@@ -17,8 +17,11 @@ class App extends Component {
       selectedVideo: null
     };
 
-    // Fetch initial videos from YouTube API with the search term and set the application state
-    YTSearch({ key: API_KEY, term: 'league of legends' }, (videos) => {
+    this.videoSearch('league of legends');
+  }
+
+  videoSearch(term) {
+    YTSearch({ key: API_KEY, term: term }, (videos) => {
       this.setState({
         videos: videos,
         selectedVideo: videos[0]
@@ -32,7 +35,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Navbar />
+        <Navbar onSearchTermChange={term => this.videoSearch(term)} />
         <div className="container main-body">
           <div className="d-none d-sm-block">
             <div className="row no-gutters">

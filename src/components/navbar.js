@@ -1,9 +1,15 @@
 import React, { Component } from 'react';
-import SearchBar from './search_bar';
 
 import './navbar.css';
 
 class Navbar extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = { term: 'league of legends' };
+    this.searchRef = React.createRef();
+  }
+
   render() {
     return (
       <nav className="navbar navbar-expand-sm">
@@ -21,7 +27,19 @@ class Navbar extends Component {
               </ul>
             </div>
             <div className="nav-right col-7 d-none d-sm-block">
-              <SearchBar />
+              <div className="input-group">
+                <input
+                  className="search-input form-control"
+                  value={this.state.term}
+                  onChange={e => this.onInputChange(e.target.value)}
+                  ref={this.searchRef}
+                />
+                <div className="input-group-append">
+                  <button className="btn btn-outline-primary" type="button">
+                    <i className="icon ion-md-search"></i>
+                  </button>
+                </div>
+              </div>
             </div>
             <div className="mobile-view d-block d-sm-none">
               <ul className="navbar-nav">
@@ -30,13 +48,31 @@ class Navbar extends Component {
                   <a className="nav-link" href="/">Channels</a>
                 </li>
               </ul>
-              <SearchBar />
+              <div className="input-group">
+                <input
+                  className="search-input form-control"
+                  value={this.state.term}
+                  onChange={e => this.onInputChange(e.target.value)}
+                  ref={this.searchRef}
+                />
+                <div className="input-group-append">
+                  <button className="btn btn-outline-primary" type="button">
+                    <i className="icon ion-md-search"></i>
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </nav>
     );
   };
+
+  onInputChange(term) {
+    this.setState({term});
+    this.props.onSearchTermChange(term)
+  }
+
 }
 
 export default Navbar;

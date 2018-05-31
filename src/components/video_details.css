@@ -10,10 +10,16 @@
   cursor: pointer;
   font-size: 80%;
   margin-bottom: 10px;
+  margin-top: 20px;
 }
 
-.video-description {
+.channelTitle span:first-of-type {
+  font-size: 80%;
+}
 
+.channelTitle span:last-of-type {
+  font-size: 90%;
+  font-weight: 500;
 }
 
 .spinner {

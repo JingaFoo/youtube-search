@@ -12,17 +12,22 @@ const VideoDetail = ({video}) => {
   const videoId = video.id.videoId;
   const url = `https://www.youtube.com/embed/${videoId}`;
 
+  console.log(video)
+
   return (
     <div className="video-detail-box justify-content-center">
       <div className="video-detail">
         <div className="embed-responsive embed-responsive-16by9">
-          <iframe className="embed-responsive-item" src={url}></iframe>
+          <iframe className="embed-responsive-item" src={url} title="description"></iframe>
         </div>
         <div className="details p-4">
           <div>
             <h4>{video.snippet.title}</h4>
           </div>
           <hr />
+          <div className="channelTitle">
+            <span>by</span> <span>{video.snippet.channelTitle}</span>
+          </div>
           <button className="description-expand" type="button" data-toggle="collapse" data-target="#collapseDetails" aria-expanded="false" aria-controls="collapseDetails">
             Description  <i className="icon ion-md-arrow-dropdown"></i>
           </button>

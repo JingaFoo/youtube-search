@@ -29,6 +29,10 @@
   color: #700;
 }
 
+.search-input {
+  width: 89%;
+}
+
 /* ------------- MEDIA QUERIES -------------*/
 
 @media only screen and (max-width: 576px) {
