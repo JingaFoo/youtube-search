@@ -18,7 +18,7 @@
 }
 
 .channelTitle span:last-of-type {
-  font-size: 90%;
+  font-size: 70%;
   font-weight: 500;
 }
 
@@ -46,4 +46,10 @@
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+@media only screen and (max-width: 992px) {
+  .video-detail-box {
+    margin-top: 10px;
+  }
 }

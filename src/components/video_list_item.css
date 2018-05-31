@@ -30,3 +30,9 @@
   width: 100%;
   height: auto;
 }
+
+@media only screen and (max-width: 992px) {
+  .video-item:hover {
+    box-shadow: 0 2px 2px #fff;
+  }
+}

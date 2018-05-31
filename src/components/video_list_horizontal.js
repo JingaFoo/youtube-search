@@ -1,11 +1,11 @@
 import React from 'react';
 import './video_list_item.css';
 
-const VideoListItem = ({video, onVideoSelect}) => {
+const VideoListItemHorizontal = ({video, onVideoSelect}) => {
   // Functional prop onVideoSelect will update the selectedVideo state via onClick while passing the video prop as the onVideoSelect parameter
   // onVideoSelect will pass the video prop to the parent component VideoList, which will set the selectedVideo state using the video prop passed as its parameter
   return (
-    <div onClick={() => onVideoSelect(video)} className="col-12 video-item">
+    <div onClick={() => onVideoSelect(video)} className="col-4 video-item" >
       <div className="channel-details p-2">
         <span>{video.snippet.channelTitle}</span>
         <hr className="my-2" />
@@ -20,4 +20,4 @@ const VideoListItem = ({video, onVideoSelect}) => {
   );
 }
 
-export default VideoListItem;
+export default VideoListItemHorizontal;

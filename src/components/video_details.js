@@ -20,9 +20,7 @@ const VideoDetail = ({video}) => {
           <iframe className="embed-responsive-item" src={url} title="description"></iframe>
         </div>
         <div className="details p-4">
-          <div>
-            <h4>{video.snippet.title}</h4>
-          </div>
+          <h4 className="video-title">{video.snippet.title}</h4>
           <hr />
           <div className="channelTitle">
             <span>by</span> <span>{video.snippet.channelTitle}</span>

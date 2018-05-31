@@ -10,3 +10,20 @@
 .video-list-content {
   margin: 10px 30px;
 }
+
+
+@media only screen and (max-width: 992px) {
+
+  .video-list-content {
+    margin: 0;
+  }
+
+  .video-list {
+    width: 650px;
+    overflow-x: scroll;
+  }
+
+  .video-list .row {
+    flex-wrap: nowrap;
+  }
+}

@@ -40,7 +40,7 @@ class App extends Component {
       <div>
         <Navbar onSearchTermChange={videoSearch} />
         <div className="container main-body">
-          <div className="d-none d-sm-block">
+          <div className="d-none d-lg-block">
             <div className="row no-gutters">
               <div className="col-8">
                 <VideoDetails video={this.state.selectedVideo} />
@@ -52,14 +52,18 @@ class App extends Component {
               </div>
             </div>
           </div>
-          <div className="d-block d-sm-none">
-            <div className="">
-              <VideoDetails video={this.state.videos[0]} />
+          <div className="d-none d-md-block d-lg-none">
+            <div className="row d-flex justify-content-center">
+              <div className="col-10">
+                <VideoDetails video={this.state.selectedVideo} />
+              </div>
             </div>
-            <div className="">
-              <VideoList
-                onVideoSelect={selectedVideo => this.setState({selectedVideo})}
-                videos={this.state.videos} />
+            <div className="row">
+              <div className="col-12">
+                <VideoList
+                  onVideoSelect={selectedVideo => this.setState({selectedVideo})}
+                  videos={this.state.videos} />
+              </div>
             </div>
           </div>
         </div>
