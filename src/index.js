@@ -1,3 +1,4 @@
+import _ from 'lodash';
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import YTSearch from 'youtube-api-search';
@@ -33,9 +34,11 @@ class App extends Component {
     Pass a functional prop onVideoSelect to VideoList that updates the selectedVideo state
   */
   render() {
+    const videoSearch = _.debounce((term) => { this.videoSearch(term) }, 500);
+
     return (
       <div>
-        <Navbar onSearchTermChange={term => this.videoSearch(term)} />
+        <Navbar onSearchTermChange={videoSearch} />
         <div className="container main-body">
           <div className="d-none d-sm-block">
             <div className="row no-gutters">

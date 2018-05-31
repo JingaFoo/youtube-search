@@ -9,10 +9,9 @@ const VideoDetail = ({video}) => {
       </div>
     );
   }
+
   const videoId = video.id.videoId;
   const url = `https://www.youtube.com/embed/${videoId}`;
-
-  console.log(video)
 
   return (
     <div className="video-detail-box justify-content-center">

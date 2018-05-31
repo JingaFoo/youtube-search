@@ -22,11 +22,11 @@ class Navbar extends Component {
             <div className="nav-left col-2 d-none d-sm-block">
               <ul className="navbar-nav">
                 <li className="nav-item">
-                  <a className="nav-link" href="/"><i className="icon ion-md-home"></i></a>
+                  <a className="nav-link" href="/"><i className="icon ion-md-home nav-icons"></i></a>
                 </li>
               </ul>
             </div>
-            <div className="nav-right col-7 d-none d-sm-block">
+            <div className="nav-right col-6 d-none d-sm-block">
               <div className="input-group">
                 <input
                   className="search-input form-control"
@@ -35,7 +35,7 @@ class Navbar extends Component {
                   ref={this.searchRef}
                 />
                 <div className="input-group-append">
-                  <button className="btn btn-outline-primary" type="button">
+                  <button className="search-button" type="button">
                     <i className="icon ion-md-search"></i>
                   </button>
                 </div>

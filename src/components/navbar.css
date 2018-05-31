@@ -24,13 +24,44 @@
   -webkit-transition: color 0.3s, box-shadow 0.3s ease;
 }
 
+.nav-icons {
+  padding: 20px;
+}
+
 .nav-link:hover {
   background: #fff;
   color: #700;
 }
 
-.search-input {
-  width: 89%;
+.form-control {
+  border: 0;
+  border-left: 1px solid #ccc;
+  border-radius: 0;
+  font-size: 100%;
+  padding: 20px 20px;
+}
+
+.form-control:focus {
+  border-color: #000;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.search-button {
+  border: 0;
+  background-color: #fff;
+  border-right: 1px solid #ccc;
+  padding-right: 20px;
+  color: #5d5d5d;
+  cursor: pointer;
+  font-size: 120%;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.search-button:hover {
+  color: #700;
+  border-right: 1px solid #000;
 }
 
 /* ------------- MEDIA QUERIES -------------*/
