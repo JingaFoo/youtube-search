@@ -9,13 +9,13 @@ https://developers.google.com/youtube/registering_an_application
 
 1. Choose a directory on your local machine
 -----------------------------------------
-2. Clone the repository under your newly created directory
+2. Clone the repository under your newly created directory. Command: 
 git clone https://github.com/JingaFoo/youtube-search.git
 -----------------------------------------
-3. Install dependencies (make sure you are in the project's root directory)
+3. Install dependencies (make sure you are in the project's root directory). Command: 
 npm install
 -----------------------------------------
-4. Make a folder under the root directory called config.
+4. Make a folder under the root directory called config. Command: 
 mkdir config
 -----------------------------------------
 5. Inside the config folder, create a new js file called keys.js
@@ -23,7 +23,7 @@ mkdir config
 6. Inside the keys.js file, export a const called API_KEY and set its value equal to your YouTube API key
 export default const API_KEY = 'your-youtube-api-key';
 -----------------------------------------
-7. Now run the command below to under the root directory to start the application
+7. Now run the command below to under the root directory to start the application. Command: 
 npm start
 -----------------------------------------
 8. If the port is currently busy, type y to use a different port.
