@@ -36,7 +36,7 @@ mkdir config
 -----------------------------------------
 2. Inside the config folder, create a new js file called keys.js
 -----------------------------------------
-3. Inside the keys.js file, export a const called API_KEY and set its value equal to your YouTube API key
+3. Inside the keys.js file, export a const called API_KEY and set its value equal to your YouTube API key <br />
 export default const API_KEY = 'your-youtube-api-key';
 -----------------------------------------
 ### Running the Application
