@@ -17,7 +17,7 @@ git clone https://github.com/JingaFoo/youtube-search.git
 Command: 
 npm install
 -----------------------------------------
-4. Make a folder under the root directory called config.<br />
+4. Make a folder under the src directory called config.<br />
 Command: 
 mkdir config
 -----------------------------------------
