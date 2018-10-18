@@ -2,40 +2,55 @@
 
 A simple YouTube search api implemted with React.js
 
-### Getting Started
+## Getting Started
 
-#### Prerequisites
-
-Sign up for the YouTube API keys by following these instructions
+Sign up for the YouTube Data API key by following these instructions.
 https://developers.google.com/youtube/registering_an_application
+The application needs a YouTube Data API key for sending and receiving data
+
+### Prerequisites
 
 1. Choose a directory on your local machine
 -----------------------------------------
 2. Clone the repository under your newly created directory.<br />
 Command: 
+```
 git clone https://github.com/JingaFoo/youtube-search.git
+```
 -----------------------------------------
-3. Install dependencies (make sure you are in the project's root directory).<br />
+### Installing
+
+1. Install dependencies (make sure you are in the project's root directory).<br />
 Command: 
+```
 npm install
+```
 -----------------------------------------
-4. Make a folder under the src directory called config.<br />
+### Setting up the API Key
+
+1. Make a folder under the src directory called config.<br />
 Command: 
+```
 mkdir config
+```
 -----------------------------------------
-5. Inside the config folder, create a new js file called keys.js
+2. Inside the config folder, create a new js file called keys.js
 -----------------------------------------
-6. Inside the keys.js file, export a const called API_KEY and set its value equal to your YouTube API key
+3. Inside the keys.js file, export a const called API_KEY and set its value equal to your YouTube API key
 export default const API_KEY = 'your-youtube-api-key';
 -----------------------------------------
-7. Now run the command below to under the root directory to start the application.<br />
+### Running the Application
+
+1. Now run the command below to under the root directory to start the application.<br />
 Command: 
+```
 npm start
+```
 -----------------------------------------
-8. If the port is currently busy, type y to use a different port.
+2. If the port is currently busy, type y to use a different port.
 -----------------------------------------
-9. Navigate to localhost:3000 or localhost:3001 or localhost:whatever port your system asigned to the app
+3. Navigate to localhost:3000 or localhost:3001 or localhost:whatever port your system asigned to the app
 -----------------------------------------
-10. Enjoy and let me know if you run into any issues or have constructive feedback! Much love :heart:
+4. Enjoy and let me know if you run into any issues or have constructive feedback! Much love :heart:
 
 
