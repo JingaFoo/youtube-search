@@ -4,6 +4,8 @@ A simple YouTube search api implemted with React.js
 
 ### Getting Started
 
+#### Prerequisites
+
 Sign up for the YouTube API keys by following these instructions
 https://developers.google.com/youtube/registering_an_application
 
